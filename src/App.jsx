@@ -1,7 +1,13 @@
 import { useState } from 'react';
-
 import './App.css';
-
+import myprofile from '../public/images/myprofile.jpeg';
+import github from '../public/images/github.png';
+import linkedin from '../public/images/linkedin.png';
+import next from '../public/images/next_157924.png';
+import petsloveCover from '../public/images/petsloveCover.png';
+import weatherApi from '../public/images/weatherapi.png';
+import guessNumber from '../public/images/guessNumber.png';
+import furnitrueCover from '../public/images/furnitrueCover.png';
 function App() {
   const [count, setCount] = useState(0);
 
@@ -9,7 +15,7 @@ function App() {
     <>
       <section className='about'>
         <div className='profile-picture'>
-          <img src='../src/assets/myprofile.jpeg' alt='Profile Picture' />
+          <img src={myprofile} alt='Profile Picture' />
         </div>
         <div>
           <div className='information'>
@@ -21,12 +27,12 @@ function App() {
           <ul className='socials'>
             <li className='icon'>
               <a href='https://github.com/tzuhuangyen'>
-                <img src='../src/assets/github.png' alt='github' />
+                <img src={github} alt='github' />
               </a>
             </li>
             <li className='icon'>
               <a href='www.linkedin.com/in/tzu-huang-yen-971b45192'>
-                <img src='../src/assets/linkedin.png' alt='linkedin' />
+                <img src={linkedin} alt='linkedin' />
               </a>
             </li>
           </ul>
@@ -139,7 +145,7 @@ function App() {
                 <div className='row card d-flex flex-md-row'>
                   <div className='col-md-4 mb-4 p-1'>
                     <img
-                      src='../src/assets/petsloveCover.png'
+                      src={petsloveCover}
                       className='card-img-top'
                       alt='...'
                     />
@@ -159,29 +165,20 @@ function App() {
                             href='https://github.com/tzuhuangyen/PetsLove'
                             className='btn btn-primary me-4'
                           >
-                            <img src='../src/assets/github.png' alt='' /> Github
+                            <img src={github} alt='' /> Github
                           </a>
                           <a
                             href='https://tzuhuangyen.github.io/PetsLove'
                             className='btn btn-primary'
                           >
-                            <img
-                              src='../src/assets/next_157924.png'
-                              alt=''
-                              className='me-1'
-                            />{' '}
-                            Demo
+                            <img src={next} alt='' className='me-1' /> Demo
                           </a>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div className='col-md-4 mb-4 p-1'>
-                    <img
-                      src='../src/assets/weatherapi.png'
-                      className='card-img-top'
-                      alt='...'
-                    />
+                    <img src={weatherApi} className='card-img-top' alt='...' />
                   </div>
                   <div className='col-md-8 mb-4 p-1'>
                     <div>
@@ -197,29 +194,20 @@ function App() {
                             href='https://github.com/tzuhuangyen/API-openweather-search'
                             className='btn btn-primary me-4'
                           >
-                            <img src='../src/assets/github.png' alt='' /> Github
+                            <img src={github} alt='' /> Github
                           </a>
                           <a
                             href='https://tzuhuangyen.github.io/React_openWeather_API/'
                             className='btn btn-primary'
                           >
-                            <img
-                              src='../src/assets/next_157924.png'
-                              alt=''
-                              className='me-1'
-                            />{' '}
-                            Demo
+                            <img src={next} alt='' className='me-1' /> Demo
                           </a>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div className='col-md-4 mb-4 p-1'>
-                    <img
-                      src='../src/assets/guessNumber.png'
-                      className='card-img-top'
-                      alt='...'
-                    />
+                    <img src={guessNumber} className='card-img-top' alt='...' />
                   </div>
                   <div className='col-md-8 mb-4 p-1'>
                     <div>
@@ -234,17 +222,13 @@ function App() {
                             href='https://github.com/tzuhuangyen/JS-Game-Guess-number'
                             className='btn btn-primary me-4'
                           >
-                            <img src='../src/assets/github.png' alt='' /> Github
+                            <img src={github} alt='' /> Github
                           </a>
                           <a
                             href='https://tzuhuangyen.github.io/JS-Game-Guess-number/'
                             className='btn btn-primary'
                           >
-                            <img
-                              src='../src/assets/next_157924.png'
-                              alt=''
-                              className='me-1'
-                            />
+                            <img src={next} alt='' className='me-1' />
                             Demo
                           </a>
                         </div>
@@ -253,7 +237,7 @@ function App() {
                   </div>
                   <div className='col-md-4 mb-4 p-1'>
                     <img
-                      src='../src/assets/furnitrueCover.png'
+                      src={furnitrueCover}
                       className='card-img-top'
                       alt='...'
                     />
@@ -276,17 +260,13 @@ function App() {
                             href='https://github.com/tzuhuangyen/Furniture-online-shop'
                             className='btn btn-primary me-4'
                           >
-                            <img src='../src/assets/github.png' alt='' /> Github
+                            <img src={github} alt='' /> Github
                           </a>
                           <a
                             href='https://tzuhuangyen.github.io/Furniture-online-shop/admin.html'
                             className='btn btn-primary'
                           >
-                            <img
-                              src='../src/assets/next_157924.png'
-                              alt=''
-                              className='me-1'
-                            />
+                            <img src={next} alt='' className='me-1' />
                             Demo
                           </a>
                         </div>
